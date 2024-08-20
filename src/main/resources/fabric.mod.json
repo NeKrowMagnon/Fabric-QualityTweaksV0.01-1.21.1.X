@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "qualitytweaks",
+	"version": "${version}",
+	"name": "Quality Tweaks",
+	"description": "This is a beginner mod aimed to add quality tweaks and feature to Minecraft that feel welcome to a vanilla experience. Designed by NeKrowMagnon",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/qualitytweaks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nekrowmagnon.qualitytweaks.QualityTweaks"
+		],
+		"fabric-datagen": [
+			"net.nekrowmagnon.qualitytweaks.QualityTweaksDataGenerator"
+		],
+		"client": [
+			"net.nekrowmagnon.qualitytweaks.QualityTweaksClient"
+		]
+	},
+	"mixins": [
+		"qualitytweaks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
