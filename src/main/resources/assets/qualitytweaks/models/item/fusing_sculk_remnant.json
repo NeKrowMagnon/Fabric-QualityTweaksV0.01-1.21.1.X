@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "qualitytweaks:item/fusing_sculk_remnant"
+  }
+}
